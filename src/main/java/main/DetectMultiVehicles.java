@@ -26,11 +26,7 @@ import org.opencv.core.MatOfByte;
 import org.opencv.imgcodecs.Imgcodecs;
 
 public class DetectMultiVehicles {
-<<<<<<< HEAD
 	static Main_v2 detector = new Main_v2();
-=======
-	static Main detector = new Main();
->>>>>>> 52afa55cec25a5bd9fb155d0d4f5903b33eaf06a
 	static ImageIcon img;
 	static String img_dir, img_name;
 	static JFrame jf;
@@ -151,11 +147,7 @@ public class DetectMultiVehicles {
 	}
 
 	public static BufferedImage detectSingleVehicle(Mat imgMat) {
-<<<<<<< HEAD
 		detector.detectLicensePlate(imgMat);
-=======
-		detector.detectAndDrawPlate(imgMat);
->>>>>>> 52afa55cec25a5bd9fb155d0d4f5903b33eaf06a
 		return Mat2BufferedImage(imgMat);
 	}
 
