@@ -73,13 +73,25 @@ public class Main {
 		try {
 			// Get the InputStream for the resource.
 			InputStream inputStream = Main.class.getResourceAsStream(resourcePath);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 52afa55cec25a5bd9fb155d0d4f5903b33eaf06a
 			if (inputStream == null) {
 				// Handle case where resource is not found
 				throw new RuntimeException("Resource not found in classpath: " + resourcePath);
 			}
+<<<<<<< HEAD
 			// 2. Create a temporary file
 			tempFile = File.createTempFile("plate_cascade", ".xml");
 			tempFile.deleteOnExit(); 
+=======
+
+			// 2. Create a temporary file
+			tempFile = File.createTempFile("plate_cascade", ".xml");
+			tempFile.deleteOnExit(); 
+
+>>>>>>> 52afa55cec25a5bd9fb155d0d4f5903b33eaf06a
 			// Copy the contents from the InputStream to the temporary file
 			Files.copy(inputStream, tempFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
 			inputStream.close(); // Close the input stream
